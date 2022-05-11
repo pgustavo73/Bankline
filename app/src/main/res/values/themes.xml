@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- https://m3.material.io/libraries/mdc-android/getting-started -->
+    <style name="Theme.Bankline" parent="Theme.Material3.Light.NoActionBar">
+        <!-- https://m3.material.io/libraries/mdc-android/color-theming -->
+        <item name="colorPrimary">@color/primary_600</item>
+        <item name="colorPrimaryContainer">@color/primary_100</item>
+        <item name="colorOnPrimaryContainer">@color/primary_900</item>
+        <item name="colorPrimaryInverse">@color/primary_200</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_24</item>
+    </style>
+    <!-- Interesting alternative to Material 3: https://material-foundation.github.io/material-theme-builder -->
+</resources>
