@@ -22,9 +22,9 @@ class BankStatementAdapter(private val dataSet: List<Movimentacao>) : RecyclerVi
             val value = tvValue.text.toString()
             val currency = Currency.getByName(value)
             tvValue.text = item.valor.formatCurrency(currency.locale)
-            val formatstorege = SimpleDateFormat("yyyy-MM-dd")
+            val formatstorege = SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
             val originaldate: Date = formatstorege.parse(item.dataHora)!!
-            val date = SimpleDateFormat("dd/MM/yyyy")
+            val date = SimpleDateFormat("dd/MM/yyyy HH:mm:ss")
             tvDatetime.text = date.format(originaldate)
             val typeIcon = if (TipoMovimentacao.RECEITA == item.tipo) R.drawable.ic_money_on
             else R.drawable.ic_money_out
