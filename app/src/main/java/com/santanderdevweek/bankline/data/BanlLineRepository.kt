@@ -13,7 +13,7 @@ object BanlLineRepository {
 
     private val TAG = javaClass.simpleName
 
-    const val BASE_URL = "https://paulogdio-bankline-api.herokuapp.com/"
+    const val BASE_URL = "https://bankline-api-production.up.railway.app"
 
     private val restApi by lazy {
         Retrofit.Builder()
